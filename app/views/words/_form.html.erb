@@ -1,0 +1,33 @@
+<%= form_for(@word) do |f| %>
+  <% if @word.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@word.errors.count, "error") %> prohibited this word from being saved:</h2>
+
+      <ul>
+      <% @word.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gematria_value %><br />
+    <%= f.number_field :gematria_value %>
+  </div>
+  <div class="field">
+    <%= f.label :gematria_word %><br />
+    <%= f.text_field :gematria_word %>
+  </div>
+  <div class="field">
+    <%= f.label :gematria_desc %><br />
+    <%= f.text_field :gematria_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
