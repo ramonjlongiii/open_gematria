@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tree sphere name:</b>
+  <%= @tree_of_life.tree_sphere_name %>
+</p>
+
+<p>
+  <b>Tree path number:</b>
+  <%= @tree_of_life.tree_path_number %>
+</p>
+
+<p>
+  <b>Tree path correspondence:</b>
+  <%= @tree_of_life.tree_path_correspondence %>
+</p>
+
+
+<%= link_to 'Edit', edit_tree_of_life_path(@tree_of_life) %> |
+<%= link_to 'Back', tree_of_lives_path %>

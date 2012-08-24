@@ -1,0 +1,29 @@
+<%= form_for(@tree_of_life) do |f| %>
+  <% if @tree_of_life.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tree_of_life.errors.count, "error") %> prohibited this tree_of_life from being saved:</h2>
+
+      <ul>
+      <% @tree_of_life.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tree_sphere_name %><br />
+    <%= f.text_field :tree_sphere_name %>
+  </div>
+  <div class="field">
+    <%= f.label :tree_path_number %><br />
+    <%= f.number_field :tree_path_number %>
+  </div>
+  <div class="field">
+    <%= f.label :tree_path_correspondence %><br />
+    <%= f.text_field :tree_path_correspondence %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

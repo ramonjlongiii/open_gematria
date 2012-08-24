@@ -1,0 +1,2 @@
+module Liber777TablesHelper
+end

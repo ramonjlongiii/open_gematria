@@ -1,4 +1,8 @@
 OpenGematria::Application.routes.draw do
+  resources :liber777_tables
+
+  resources :tree_of_lives
+
   resources :words
 
   resources :users

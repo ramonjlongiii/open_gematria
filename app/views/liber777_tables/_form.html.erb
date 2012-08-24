@@ -1,0 +1,25 @@
+<%= form_for(@liber777_table) do |f| %>
+  <% if @liber777_table.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@liber777_table.errors.count, "error") %> prohibited this liber777_table from being saved:</h2>
+
+      <ul>
+      <% @liber777_table.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :777_table_name %><br />
+    <%= f.text_field :777_table_name %>
+  </div>
+  <div class="field">
+    <%= f.label :777_table_number %><br />
+    <%= f.number_field :777_table_number %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
