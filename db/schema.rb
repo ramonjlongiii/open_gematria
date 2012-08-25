@@ -11,15 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120824041200) do
-
-  create_table "tree_of_lives", :force => true do |t|
-    t.string   "tree_sphere_name"
-    t.integer  "tree_path_number"
-    t.string   "tree_path_correspondence"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
-  end
+ActiveRecord::Schema.define(:version => 20120823214824) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
