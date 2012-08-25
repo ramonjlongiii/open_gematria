@@ -1,4 +1,6 @@
 OpenGematria::Application.routes.draw do
+  resources :holy_book_verses
+
   resources :holy_books
 
   resources :accounts

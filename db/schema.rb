@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120825060955) do
+ActiveRecord::Schema.define(:version => 20120825061745) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(:version => 20120825060955) do
     t.string   "password"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "holy_book_verses", :force => true do |t|
+    t.integer  "versenumber"
+    t.integer  "chapter"
+    t.string   "versetext"
+    t.integer  "holy_book_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "holy_books", :force => true do |t|
