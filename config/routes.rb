@@ -1,4 +1,6 @@
 OpenGematria::Application.routes.draw do
+  resources :accounts
+
   resources :u_sers
 
   resources :qbl_tree_of_lives
