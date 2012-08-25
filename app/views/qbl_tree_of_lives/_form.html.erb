@@ -1,0 +1,33 @@
+<%= form_for(@qbl_tree_of_life) do |f| %>
+  <% if @qbl_tree_of_life.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@qbl_tree_of_life.errors.count, "error") %> prohibited this qbl_tree_of_life from being saved:</h2>
+
+      <ul>
+      <% @qbl_tree_of_life.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :owner %><br />
+    <%= f.text_field :owner %>
+  </div>
+  <div class="field">
+    <%= f.label :magicalplane %><br />
+    <%= f.text_field :magicalplane %>
+  </div>
+  <div class="field">
+    <%= f.label :qblpath %><br />
+    <%= f.text_field :qblpath %>
+  </div>
+  <div class="field">
+    <%= f.label :777 %><br />
+    <%= f.text_field :777 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

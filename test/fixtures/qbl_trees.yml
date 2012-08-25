@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  owner: MyString
+  magicalplane: MyString
+  qblpath: MyString
+
+two:
+  owner: MyString
+  magicalplane: MyString
+  qblpath: MyString

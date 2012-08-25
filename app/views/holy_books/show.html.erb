@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @holy_book.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @holy_book.author %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%= @holy_book.publisher %>
+</p>
+
+<p>
+  <b>Publisheddate:</b>
+  <%= @holy_book.publisheddate %>
+</p>
+
+<p>
+  <b>Isbn:</b>
+  <%= @holy_book.isbn %>
+</p>
+
+<p>
+  <b>Edition:</b>
+  <%= @holy_book.edition %>
+</p>
+
+
+<%= link_to 'Edit', edit_holy_book_path(@holy_book) %> |
+<%= link_to 'Back', holy_books_path %>

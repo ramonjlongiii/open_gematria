@@ -1,0 +1,33 @@
+<h1>Listing holy_books</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Publisher</th>
+    <th>Publisheddate</th>
+    <th>Isbn</th>
+    <th>Edition</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @holy_books.each do |holy_book| %>
+  <tr>
+    <td><%= holy_book.title %></td>
+    <td><%= holy_book.author %></td>
+    <td><%= holy_book.publisher %></td>
+    <td><%= holy_book.publisheddate %></td>
+    <td><%= holy_book.isbn %></td>
+    <td><%= holy_book.edition %></td>
+    <td><%= link_to 'Show', holy_book %></td>
+    <td><%= link_to 'Edit', edit_holy_book_path(holy_book) %></td>
+    <td><%= link_to 'Destroy', holy_book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Holy book', new_holy_book_path %>

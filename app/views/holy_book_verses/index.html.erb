@@ -1,0 +1,29 @@
+<h1>Listing holy_book_verses</h1>
+
+<table>
+  <tr>
+    <th>Versenumber</th>
+    <th>Chapter</th>
+    <th>Versetext</th>
+    <th>Holy book</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @holy_book_verses.each do |holy_book_verse| %>
+  <tr>
+    <td><%= holy_book_verse.versenumber %></td>
+    <td><%= holy_book_verse.chapter %></td>
+    <td><%= holy_book_verse.versetext %></td>
+    <td><%= holy_book_verse.holy_book_id %></td>
+    <td><%= link_to 'Show', holy_book_verse %></td>
+    <td><%= link_to 'Edit', edit_holy_book_verse_path(holy_book_verse) %></td>
+    <td><%= link_to 'Destroy', holy_book_verse, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Holy book verse', new_holy_book_verse_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Versenumber:</b>
+  <%= @holy_book_verse.versenumber %>
+</p>
+
+<p>
+  <b>Chapter:</b>
+  <%= @holy_book_verse.chapter %>
+</p>
+
+<p>
+  <b>Versetext:</b>
+  <%= @holy_book_verse.versetext %>
+</p>
+
+<p>
+  <b>Holy book:</b>
+  <%= @holy_book_verse.holy_book_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_holy_book_verse_path(@holy_book_verse) %> |
+<%= link_to 'Back', holy_book_verses_path %>

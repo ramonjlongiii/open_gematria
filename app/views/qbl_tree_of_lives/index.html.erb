@@ -1,0 +1,29 @@
+<h1>Listing qbl_tree_of_lives</h1>
+
+<table>
+  <tr>
+    <th>Owner</th>
+    <th>Magicalplane</th>
+    <th>Qblpath</th>
+    <th>777</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qbl_tree_of_lives.each do |qbl_tree_of_life| %>
+  <tr>
+    <td><%= qbl_tree_of_life.owner %></td>
+    <td><%= qbl_tree_of_life.magicalplane %></td>
+    <td><%= qbl_tree_of_life.qblpath %></td>
+    <td><%= qbl_tree_of_life.777 %></td>
+    <td><%= link_to 'Show', qbl_tree_of_life %></td>
+    <td><%= link_to 'Edit', edit_qbl_tree_of_life_path(qbl_tree_of_life) %></td>
+    <td><%= link_to 'Destroy', qbl_tree_of_life, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qbl tree of life', new_qbl_tree_of_life_path %>
