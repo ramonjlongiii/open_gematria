@@ -1,4 +1,6 @@
 OpenGematria::Application.routes.draw do
+  resources :qbl_trees
+
   resources :liber777_tables
 
   resources :tree_of_lives

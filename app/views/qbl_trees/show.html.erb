@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Owner:</b>
+  <%= @qbl_tree.owner %>
+</p>
+
+<p>
+  <b>Plane:</b>
+  <%= @qbl_tree.plane %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @qbl_tree.path %>
+</p>
+
+<p>
+  <b>777entry:</b>
+  <%= @qbl_tree.777entry %>
+</p>
+
+<p>
+  <b>777entry:</b>
+  <%= @qbl_tree.777entry_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_qbl_tree_path(@qbl_tree) %> |
+<%= link_to 'Back', qbl_trees_path %>
