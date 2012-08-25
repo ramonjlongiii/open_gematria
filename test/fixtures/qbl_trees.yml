@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  owner: MyString
+  plane: MyString
+  path: 1
+  777: MyString
+
+two:
+  owner: MyString
+  plane: MyString
+  path: 1
+  777: MyString
