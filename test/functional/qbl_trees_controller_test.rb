@@ -18,7 +18,7 @@ class QblTreesControllerTest < ActionController::TestCase
 
   test "should create qbl_tree" do
     assert_difference('QblTree.count') do
-      post :create, qbl_tree: { 777entry: @qbl_tree.777entry, 777entry_id: @qbl_tree.777entry_id, owner: @qbl_tree.owner, path: @qbl_tree.path, plane: @qbl_tree.plane }
+      post :create, qbl_tree: { 777: @qbl_tree.777, owner: @qbl_tree.owner, path: @qbl_tree.path, plane: @qbl_tree.plane }
     end
 
     assert_redirected_to qbl_tree_path(assigns(:qbl_tree))
@@ -35,7 +35,7 @@ class QblTreesControllerTest < ActionController::TestCase
   end
 
   test "should update qbl_tree" do
-    put :update, id: @qbl_tree, qbl_tree: { 777entry: @qbl_tree.777entry, 777entry_id: @qbl_tree.777entry_id, owner: @qbl_tree.owner, path: @qbl_tree.path, plane: @qbl_tree.plane }
+    put :update, id: @qbl_tree, qbl_tree: { 777: @qbl_tree.777, owner: @qbl_tree.owner, path: @qbl_tree.path, plane: @qbl_tree.plane }
     assert_redirected_to qbl_tree_path(assigns(:qbl_tree))
   end
 
