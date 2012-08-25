@@ -3,11 +3,11 @@
 one:
   owner: MyString
   plane: MyString
-  path: 1
+  qblpath: MyString
   777: MyString
 
 two:
   owner: MyString
   plane: MyString
-  path: 1
+  qblpath: MyString
   777: MyString
