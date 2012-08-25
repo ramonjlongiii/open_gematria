@@ -3,9 +3,8 @@
 <table>
   <tr>
     <th>Owner</th>
-    <th>Plane</th>
+    <th>Magicalplane</th>
     <th>Qblpath</th>
-    <th>777</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,9 +13,8 @@
 <% @qbl_trees.each do |qbl_tree| %>
   <tr>
     <td><%= qbl_tree.owner %></td>
-    <td><%= qbl_tree.plane %></td>
+    <td><%= qbl_tree.magicalplane %></td>
     <td><%= qbl_tree.qblpath %></td>
-    <td><%= qbl_tree.777 %></td>
     <td><%= link_to 'Show', qbl_tree %></td>
     <td><%= link_to 'Edit', edit_qbl_tree_path(qbl_tree) %></td>
     <td><%= link_to 'Destroy', qbl_tree, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120823214824) do
+ActiveRecord::Schema.define(:version => 20120825033624) do
+
+  create_table "qbl_trees", :force => true do |t|
+    t.string   "owner"
+    t.string   "magicalplane"
+    t.string   "qblpath"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
